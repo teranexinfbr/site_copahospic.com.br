@@ -1,0 +1,131 @@
+
+.hero {
+    display: flex;
+    flex-direction: column;  /* Organiza os elementos em coluna */
+    align-items: flex-end;   /* Alinha todos os itens à direita */
+    color: #fff;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    border-radius: 15px;
+    height: 60vh;
+}
+
+.hero h2 {
+    margin-top: 8rem;
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+    text-align: right;
+    text-shadow: 
+        1px 1px 0 #000,  
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+.hero .btn {
+    width: 209px;
+    display: flex;
+    justify-content: flex-end;
+    background: #fff;
+    color: var(--cor-roxa-site);
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.hero .btn:hover {
+    background: var(--cor-hover-link);
+    color: #fff;
+}
+
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.highlight-item {
+    color: black;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+}
+
+.item1 {
+    background-image: url(../../../src/imagens/backgrounds/BgItem1.png);
+    color: #fff;
+    background-size: cover;
+    background-position: 700px 200px;
+}
+
+.item2 {
+    background-image: url(../../../src/imagens/backgrounds/BgItem2.jpg);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item3 {
+    background-image: url(../../../src/imagens/backgrounds/BgNoticias.jpg);
+    color: #fff;
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+
+.highlight-item:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 
+    1px 1px 0 #000,  
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+
+.highlight-item p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    box-shadow: 3px #000;
+    text-shadow: 
+    1px 1px 0 #000,  
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+
+.highlight-item a {
+    transition: text-decoration 0.3s ease-in-out;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-shadow: rgba(0, 0, 0, 0.8);
+}
+
+.highlight-item:hover a:hover {
+    color: var(--cor-hover-link);
+}
+
+.highlight-item:hover a{
+    text-decoration: underline;
+}

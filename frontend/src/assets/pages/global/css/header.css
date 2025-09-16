@@ -1,0 +1,152 @@
+
+html {
+    scroll-behavior: smooth;
+}
+/* HEADER E FOOTER */
+/* ˅˅HEADER˅˅ */
+
+.header-site {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0d0d0d;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 99%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+li {
+    background-color: transparent;
+}
+
+.navbar ul li a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a.active, .navbar ul li a:hover {
+    background-color: var(--cor-hover-link);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.navbar ul li a.active {
+    background-color: var(--cor-hover-link);
+    color: #fff;
+    font-weight: bold;
+}
+
+.cadastro-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cadastro-buttons .bttn-signup {
+    display: flex;
+    padding: 8px 15px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: "Ubuntu", sans-serif;
+    gap: 5px;
+}
+
+.cadastro-buttons .bttn-signup:hover {
+    background-color: var(--cor-hover-link);
+    border-color: var(--cor-hover-link);
+}
+
+
+/* Botão Hambúrguer */
+.menu-toggle {
+    display: none; /* Apenas visível em telas menores */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001; /* Fica acima do menu */
+  }
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 100%;
+      width: 99%;
+      height: 100vh;
+      background-color: #0d0d0d;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: left 0.3s ease;
+      z-index: 999;
+    }
+  
+    .navbar.active {
+      left: 0;
+    }
+  
+    .navbar ul {
+        padding: 0 10vh;
+        justify-content: center;
+      margin-top: 7rem;
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .navbar ul li a {
+      font-size: 24px;
+    }
+  }

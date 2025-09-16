@@ -1,0 +1,174 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    margin-block-end: 0;
+}
+
+.conteudo-card-camp {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+
+.cards-camp {
+    display: flex;
+    align-content: space-between;
+}
+
+.card-camp {
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.card-camp:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+.copa-hospic {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    
+}
+
+.nome-camp h4  {
+    margin-block-end: 0px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.camp-page  {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.camp-page:hover {
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+.foto-camp {
+    background-image:  url(../../../../src/imagens/backgrounds/BgCamp02.png);
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    align-items: center;
+    align-content: center;
+    background-color: #1e1e1e;
+    width: 300px;
+    height: 150px;
+}
+
+.info-camp .data-camp {
+    font-size: 16px;
+    text-align: center;
+    background-color: green;
+    border-radius: 15px;
+    width: 256px;
+    height: 25px;
+}
+
+.bttn-inscricao-copa {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #fff;
+    transition: color 0.8s ease-in;
+    border: 1px #fff  solid;
+    border-radius: 15px;
+    padding: 7px 7px;
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bttn-insc {
+    text-decoration: none;
+}
+
+.bttn-inscricao-copa:hover {
+    background-color: #6a0dad;
+    transition: background 0.3s ease-in;
+    border-color: #6a0dad;
+    text-decoration: none;
+    text-decoration-line: none ;
+}
+
+.data-camp h5 {
+    margin-block-end: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.data-camp {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-end: 0px;
+    font-size: 19px;
+}
+
+.data-camp i {
+    font-size: 20px;
+}
+
+.info-camp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 7px;
+    text-decoration: none;
+}
+
+
+.descricao-camp {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 5px;
+    gap: 3px;
+}
+
+.descricao-camp p {
+    display: flex;
+    justify-content: center;
+    margin-block-end: 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+  
+  .descricao-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre o ícone e o texto */
+  }
+  
+  .descricao-item i {
+    font-size: 18px; /* Tamanho do ícone */
+    color: #fff; /* Cor dos ícones */
+  }
+  
